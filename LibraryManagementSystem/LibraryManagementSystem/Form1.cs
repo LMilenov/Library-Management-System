@@ -29,6 +29,10 @@ namespace LibraryManagementSystem
             if(panel2.Width > 575)
             {
                 timer1.Stop();
+
+                LoginForm lForm = new LoginForm();
+                lForm.Show();
+                this.Hide();
             }
         }
     }
