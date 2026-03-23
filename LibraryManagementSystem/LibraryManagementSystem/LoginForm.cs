@@ -36,5 +36,12 @@ namespace LibraryManagementSystem
         {
 
         }
+
+        private void signupBtn_Click(object sender, EventArgs e)
+        {
+            RegisterForm rForm = new RegisterForm();
+            rForm.Show();
+            this.Hide();
+        }
     }
 }
