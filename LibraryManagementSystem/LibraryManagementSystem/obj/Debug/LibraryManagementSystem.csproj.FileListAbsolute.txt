@@ -10,3 +10,4 @@ C:\Users\lusi_\Desktop\Library-Management-System\LibraryManagementSystem\Library
 C:\Users\lusi_\Desktop\Library-Management-System\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.pdb
 C:\Users\lusi_\Desktop\Library-Management-System\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.LoginForm.resources
 C:\Users\lusi_\Desktop\Library-Management-System\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.RegisterForm.resources
+C:\Users\lusi_\Desktop\Library-Management-System\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.MainForm.resources
