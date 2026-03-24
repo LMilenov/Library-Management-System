@@ -34,8 +34,8 @@
             this.register_btn = new System.Windows.Forms.Button();
             this.register_password = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.register_email = new System.Windows.Forms.Label();
+            this.register_email = new System.Windows.Forms.TextBox();
+            this.email_label = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -106,6 +106,7 @@
             // 
             // register_password
             // 
+            this.register_password.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.register_password.Location = new System.Drawing.Point(13, 335);
             this.register_password.Multiline = true;
             this.register_password.Name = "register_password";
@@ -123,23 +124,24 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Password:";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(13, 213);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(281, 30);
-            this.textBox1.TabIndex = 15;
-            // 
             // register_email
             // 
-            this.register_email.AutoSize = true;
             this.register_email.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.register_email.Location = new System.Drawing.Point(12, 192);
+            this.register_email.Location = new System.Drawing.Point(13, 213);
+            this.register_email.Multiline = true;
             this.register_email.Name = "register_email";
-            this.register_email.Size = new System.Drawing.Size(103, 18);
-            this.register_email.TabIndex = 14;
-            this.register_email.Text = "Email Address:";
+            this.register_email.Size = new System.Drawing.Size(281, 30);
+            this.register_email.TabIndex = 15;
+            // 
+            // email_label
+            // 
+            this.email_label.AutoSize = true;
+            this.email_label.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.email_label.Location = new System.Drawing.Point(12, 192);
+            this.email_label.Name = "email_label";
+            this.email_label.Size = new System.Drawing.Size(103, 18);
+            this.email_label.TabIndex = 14;
+            this.email_label.Text = "Email Address:";
             // 
             // label2
             // 
@@ -185,6 +187,7 @@
             // 
             // register_username
             // 
+            this.register_username.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.register_username.Location = new System.Drawing.Point(13, 271);
             this.register_username.Multiline = true;
             this.register_username.Name = "register_username";
@@ -214,8 +217,8 @@
             this.Controls.Add(this.register_btn);
             this.Controls.Add(this.register_password);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.register_email);
+            this.Controls.Add(this.email_label);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
@@ -239,8 +242,8 @@
         private System.Windows.Forms.Button register_btn;
         private System.Windows.Forms.TextBox register_password;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label register_email;
+        private System.Windows.Forms.TextBox register_email;
+        private System.Windows.Forms.Label email_label;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;

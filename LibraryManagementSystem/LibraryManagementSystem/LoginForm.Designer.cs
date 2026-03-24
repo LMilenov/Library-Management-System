@@ -33,13 +33,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.login_username = new System.Windows.Forms.TextBox();
+            this.login_password = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.loginBtn = new System.Windows.Forms.Button();
             this.signupBtn = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.login_ShowPassword = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -97,22 +97,24 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Username:";
             // 
-            // textBox1
+            // login_username
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 214);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(281, 30);
-            this.textBox1.TabIndex = 4;
+            this.login_username.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.login_username.Location = new System.Drawing.Point(13, 214);
+            this.login_username.Multiline = true;
+            this.login_username.Name = "login_username";
+            this.login_username.Size = new System.Drawing.Size(281, 30);
+            this.login_username.TabIndex = 4;
             // 
-            // textBox2
+            // login_password
             // 
-            this.textBox2.Location = new System.Drawing.Point(13, 279);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(281, 30);
-            this.textBox2.TabIndex = 6;
+            this.login_password.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.login_password.Location = new System.Drawing.Point(13, 279);
+            this.login_password.Multiline = true;
+            this.login_password.Name = "login_password";
+            this.login_password.PasswordChar = '*';
+            this.login_password.Size = new System.Drawing.Size(281, 30);
+            this.login_password.TabIndex = 6;
             // 
             // label4
             // 
@@ -151,6 +153,7 @@
             this.loginBtn.TabIndex = 7;
             this.loginBtn.Text = "LOGIN";
             this.loginBtn.UseVisualStyleBackColor = false;
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
             // signupBtn
             // 
@@ -170,16 +173,17 @@
             this.signupBtn.UseVisualStyleBackColor = false;
             this.signupBtn.Click += new System.EventHandler(this.signupBtn_Click);
             // 
-            // checkBox1
+            // login_ShowPassword
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox1.Location = new System.Drawing.Point(177, 315);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(117, 20);
-            this.checkBox1.TabIndex = 10;
-            this.checkBox1.Text = "Show password";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.login_ShowPassword.AutoSize = true;
+            this.login_ShowPassword.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.login_ShowPassword.Location = new System.Drawing.Point(177, 315);
+            this.login_ShowPassword.Name = "login_ShowPassword";
+            this.login_ShowPassword.Size = new System.Drawing.Size(117, 20);
+            this.login_ShowPassword.TabIndex = 10;
+            this.login_ShowPassword.Text = "Show password";
+            this.login_ShowPassword.UseVisualStyleBackColor = true;
+            this.login_ShowPassword.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // LoginForm
             // 
@@ -187,13 +191,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(320, 525);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.login_ShowPassword);
             this.Controls.Add(this.signupBtn);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.loginBtn);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.login_password);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.login_username);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
@@ -218,12 +222,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox login_username;
+        private System.Windows.Forms.TextBox login_password;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button loginBtn;
         private System.Windows.Forms.Button signupBtn;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox login_ShowPassword;
     }
 }

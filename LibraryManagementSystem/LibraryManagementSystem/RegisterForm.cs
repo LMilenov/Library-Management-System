@@ -34,7 +34,7 @@ namespace LibraryManagementSystem
 
         private void register_btn_Click(object sender, EventArgs e)
         {
-            if (register_email.Text == "" || register_username.Text == "" || register_password.Text == "")
+            if (email_label.Text == "" || register_username.Text == "" || register_password.Text == "")
             {
                 MessageBox.Show("Please fill all blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -60,8 +60,28 @@ namespace LibraryManagementSystem
                             }
                             else
                             {
-                                String insertData = "INSERT INTO users (email, username, password) " +
-                                    "VALUES(@email, @username, @password)";
+                                //Get current date
+                                DateTime day = DateTime.Today;
+
+                                String insertData = "INSERT INTO users (email, username, password, date_register) " +
+                                    "VALUES(@email, @username, @password, @date)";
+
+                                using (SqlCommand insertCMD = new SqlCommand(insertData, connect))
+                                {
+                                    insertCMD.Parameters.AddWithValue("@email", register_email.Text.Trim());
+                                    insertCMD.Parameters.AddWithValue("@username", register_username.Text.Trim());
+                                    insertCMD.Parameters.AddWithValue("@password", register_password.Text.Trim());
+                                    insertCMD.Parameters.AddWithValue(@"date", day.ToString());
+
+                                    insertCMD.ExecuteNonQuery();
+
+                                    MessageBox.Show("Register successfully", "Information Message"
+                                        , MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                    LoginForm lForm = new LoginForm();
+                                    lForm.Show();
+                                    this.Hide();
+                                }
                             }
                         }
                     }
