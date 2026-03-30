@@ -11,3 +11,7 @@ C:\Users\lusi_\Desktop\Library-Management-System\LibraryManagementSystem\Library
 C:\Users\lusi_\Desktop\Library-Management-System\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.LoginForm.resources
 C:\Users\lusi_\Desktop\Library-Management-System\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.RegisterForm.resources
 C:\Users\lusi_\Desktop\Library-Management-System\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.MainForm.resources
+C:\Users\lusi_\Desktop\Library-Management-System\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.AddBooks.resources
+C:\Users\lusi_\Desktop\Library-Management-System\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Dashboard.resources
+C:\Users\lusi_\Desktop\Library-Management-System\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.IssueBooks.resources
+C:\Users\lusi_\Desktop\Library-Management-System\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.ReturnBooks.resources
