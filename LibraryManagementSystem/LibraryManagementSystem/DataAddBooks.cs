@@ -1,0 +1,63 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data.SqlClient;
+using System.Data;
+
+namespace LibraryManagementSystem
+{
+    class DataAddBooks
+    {
+        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\lusi_\Documents\library.mdf;Integrated Security=True;Connect Timeout=30");
+        public int Id { get; set; }
+        public string BookTitle { get; set; }
+        public string Author { get; set; }
+        public string Published { get; set; }
+        public string Status { get; set; }
+
+        public List<DataAddBooks> addBooksData()
+        {
+            List<DataAddBooks> listData = new List<DataAddBooks>();
+
+            if(connect.State != ConnectionState.Open)
+            {
+                try
+                {
+                    connect.Open();
+
+                    string selectData = "SELECT * FROM books WHERE date_delete IS NULL";
+
+                    using (SqlCommand cmd = new SqlCommand(selectData, connect))
+                    {
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        DataAddBooks dab = new DataAddBooks();
+
+                        while (reader.Read())
+                        {
+                            dab.Id = (int)reader["id"];
+                            dab.BookTitle = reader["book_title"].ToString();
+                            dab.Author = reader["author"].ToString();
+                            dab.Published = reader["published_date"].ToString();
+                            dab.Status = reader["status"].ToString();
+
+                            listData.Add(dab);
+                        }
+                        
+                        reader.Close();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error connecting Database: " + ex);
+                }
+                finally
+                {
+                    connect.Close();
+                }
+            }
+            return listData;
+        }
+    }
+}

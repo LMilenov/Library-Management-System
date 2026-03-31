@@ -38,13 +38,13 @@
             this.IssueBooks_btn = new System.Windows.Forms.Button();
             this.addBooks_btn = new System.Windows.Forms.Button();
             this.dashboard_btn = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.greet_label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.returnBooks1 = new LibraryManagementSystem.ReturnBooks();
-            this.issueBooks1 = new LibraryManagementSystem.IssueBooks();
-            this.addBooks1 = new LibraryManagementSystem.AddBooks();
             this.dashboard1 = new LibraryManagementSystem.Dashboard();
+            this.addBooks1 = new LibraryManagementSystem.AddBooks();
+            this.issueBooks1 = new LibraryManagementSystem.IssueBooks();
+            this.returnBooks1 = new LibraryManagementSystem.ReturnBooks();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -97,7 +97,7 @@
             this.panel2.Controls.Add(this.IssueBooks_btn);
             this.panel2.Controls.Add(this.addBooks_btn);
             this.panel2.Controls.Add(this.dashboard_btn);
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.greet_label);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 35);
@@ -146,6 +146,7 @@
             this.return_btn.TabIndex = 5;
             this.return_btn.Text = "RETURN BOOKS";
             this.return_btn.UseVisualStyleBackColor = true;
+            this.return_btn.Click += new System.EventHandler(this.return_btn_Click);
             // 
             // IssueBooks_btn
             // 
@@ -162,6 +163,7 @@
             this.IssueBooks_btn.TabIndex = 4;
             this.IssueBooks_btn.Text = "ISSUE BOOKS";
             this.IssueBooks_btn.UseVisualStyleBackColor = true;
+            this.IssueBooks_btn.Click += new System.EventHandler(this.IssueBooks_btn_Click);
             // 
             // addBooks_btn
             // 
@@ -178,6 +180,7 @@
             this.addBooks_btn.TabIndex = 3;
             this.addBooks_btn.Text = "ADD BOOKS";
             this.addBooks_btn.UseVisualStyleBackColor = true;
+            this.addBooks_btn.Click += new System.EventHandler(this.addBooks_btn_Click);
             // 
             // dashboard_btn
             // 
@@ -192,17 +195,18 @@
             this.dashboard_btn.TabIndex = 2;
             this.dashboard_btn.Text = "DASHBOARD";
             this.dashboard_btn.UseVisualStyleBackColor = true;
+            this.dashboard_btn.Click += new System.EventHandler(this.dashboard_btn_Click);
             // 
-            // label3
+            // greet_label
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(45, 135);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 19);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Welcome, Admin";
+            this.greet_label.AutoSize = true;
+            this.greet_label.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.greet_label.ForeColor = System.Drawing.Color.White;
+            this.greet_label.Location = new System.Drawing.Point(45, 135);
+            this.greet_label.Name = "greet_label";
+            this.greet_label.Size = new System.Drawing.Size(130, 19);
+            this.greet_label.TabIndex = 1;
+            this.greet_label.Text = "Welcome, Admin";
             // 
             // pictureBox1
             // 
@@ -225,19 +229,12 @@
             this.panel3.Size = new System.Drawing.Size(880, 565);
             this.panel3.TabIndex = 2;
             // 
-            // returnBooks1
+            // dashboard1
             // 
-            this.returnBooks1.Location = new System.Drawing.Point(0, 0);
-            this.returnBooks1.Name = "returnBooks1";
-            this.returnBooks1.Size = new System.Drawing.Size(880, 565);
-            this.returnBooks1.TabIndex = 0;
-            // 
-            // issueBooks1
-            // 
-            this.issueBooks1.Location = new System.Drawing.Point(0, 0);
-            this.issueBooks1.Name = "issueBooks1";
-            this.issueBooks1.Size = new System.Drawing.Size(895, 577);
-            this.issueBooks1.TabIndex = 1;
+            this.dashboard1.Location = new System.Drawing.Point(0, 0);
+            this.dashboard1.Name = "dashboard1";
+            this.dashboard1.Size = new System.Drawing.Size(880, 565);
+            this.dashboard1.TabIndex = 3;
             // 
             // addBooks1
             // 
@@ -246,12 +243,19 @@
             this.addBooks1.Size = new System.Drawing.Size(887, 580);
             this.addBooks1.TabIndex = 2;
             // 
-            // dashboard1
+            // issueBooks1
             // 
-            this.dashboard1.Location = new System.Drawing.Point(0, 0);
-            this.dashboard1.Name = "dashboard1";
-            this.dashboard1.Size = new System.Drawing.Size(880, 565);
-            this.dashboard1.TabIndex = 3;
+            this.issueBooks1.Location = new System.Drawing.Point(0, 0);
+            this.issueBooks1.Name = "issueBooks1";
+            this.issueBooks1.Size = new System.Drawing.Size(895, 577);
+            this.issueBooks1.TabIndex = 1;
+            // 
+            // returnBooks1
+            // 
+            this.returnBooks1.Location = new System.Drawing.Point(0, 0);
+            this.returnBooks1.Name = "returnBooks1";
+            this.returnBooks1.Size = new System.Drawing.Size(880, 565);
+            this.returnBooks1.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -281,7 +285,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label greet_label;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button addBooks_btn;
         private System.Windows.Forms.Button dashboard_btn;
