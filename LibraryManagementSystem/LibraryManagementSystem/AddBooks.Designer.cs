@@ -32,6 +32,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.addBooks_importBtn = new System.Windows.Forms.Button();
             this.addBooks_clearBtn = new System.Windows.Forms.Button();
             this.addBooks_deleteBtn = new System.Windows.Forms.Button();
             this.addBooks_status = new System.Windows.Forms.ComboBox();
@@ -45,7 +46,6 @@
             this.addBooks_bookTitle = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.addBooks_picture = new System.Windows.Forms.PictureBox();
-            this.addBooks_importBtn = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -102,6 +102,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(238, 525);
             this.panel1.TabIndex = 2;
+            // 
+            // addBooks_importBtn
+            // 
+            this.addBooks_importBtn.BackColor = System.Drawing.Color.SeaGreen;
+            this.addBooks_importBtn.FlatAppearance.BorderSize = 0;
+            this.addBooks_importBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addBooks_importBtn.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addBooks_importBtn.ForeColor = System.Drawing.Color.White;
+            this.addBooks_importBtn.Location = new System.Drawing.Point(60, 115);
+            this.addBooks_importBtn.Name = "addBooks_importBtn";
+            this.addBooks_importBtn.Size = new System.Drawing.Size(100, 23);
+            this.addBooks_importBtn.TabIndex = 23;
+            this.addBooks_importBtn.Text = "IMPORT";
+            this.addBooks_importBtn.UseVisualStyleBackColor = false;
+            this.addBooks_importBtn.Click += new System.EventHandler(this.addBooks_importBtn_Click);
             // 
             // addBooks_clearBtn
             // 
@@ -205,6 +220,7 @@
             this.addBooks_addBtn.TabIndex = 15;
             this.addBooks_addBtn.Text = "ADD";
             this.addBooks_addBtn.UseVisualStyleBackColor = false;
+            this.addBooks_addBtn.Click += new System.EventHandler(this.addBooks_addBtn_Click);
             // 
             // addBooks_author
             // 
@@ -248,23 +264,9 @@
             this.addBooks_picture.Location = new System.Drawing.Point(60, 16);
             this.addBooks_picture.Name = "addBooks_picture";
             this.addBooks_picture.Size = new System.Drawing.Size(100, 100);
+            this.addBooks_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.addBooks_picture.TabIndex = 8;
             this.addBooks_picture.TabStop = false;
-            // 
-            // addBooks_importBtn
-            // 
-            this.addBooks_importBtn.BackColor = System.Drawing.Color.SeaGreen;
-            this.addBooks_importBtn.FlatAppearance.BorderSize = 0;
-            this.addBooks_importBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addBooks_importBtn.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addBooks_importBtn.ForeColor = System.Drawing.Color.White;
-            this.addBooks_importBtn.Location = new System.Drawing.Point(60, 115);
-            this.addBooks_importBtn.Name = "addBooks_importBtn";
-            this.addBooks_importBtn.Size = new System.Drawing.Size(100, 23);
-            this.addBooks_importBtn.TabIndex = 23;
-            this.addBooks_importBtn.Text = "IMPORT";
-            this.addBooks_importBtn.UseVisualStyleBackColor = false;
-            this.addBooks_importBtn.Click += new System.EventHandler(this.addBooks_importBtn_Click);
             // 
             // AddBooks
             // 

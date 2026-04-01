@@ -12,7 +12,7 @@ SELECT * FROM users
 CREATE TABLE books
 (
 	id INT PRIMARY KEY IDENTITY(1,1),
-	books_title VARCHAR(Max) NULL,
+	book_title VARCHAR(Max) NULL,
 	author VARCHAR(Max) NULL,
 	published_date DATE NULL,
 	status VARCHAR(Max) NULL,
@@ -21,5 +21,10 @@ CREATE TABLE books
 	date_delete DATE NULL
 )
 
+
+
 SELECT * FROM books
 WHERE date_delete IS NULL
+
+ALTER TABLE books
+ADD  image VARCHAR(MAX) NULL

@@ -158,5 +158,8 @@
     <Content Include="Assets\icons8_return_32px_3.png" />
     <Content Include="Assets\pexels-polina-zimmerman-3747468.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Books_Directory\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
