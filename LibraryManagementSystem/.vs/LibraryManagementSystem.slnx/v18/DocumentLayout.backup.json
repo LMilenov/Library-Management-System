@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+      "AbsoluteMoniker": "D:0:0:{8527CF2F-A876-460F-8DBD-37EDF72D17DB}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\librarymanagementsystem\\addbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8527CF2F-A876-460F-8DBD-37EDF72D17DB}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\addbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8527CF2F-A876-460F-8DBD-37EDF72D17DB}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\lusi_\\desktop\\library-management-system\\librarymanagementsystem\\librarymanagementsystem\\addbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8527CF2F-A876-460F-8DBD-37EDF72D17DB}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\librarymanagementsystem\\addbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8527CF2F-A876-460F-8DBD-37EDF72D17DB}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\addbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8527CF2F-A876-460F-8DBD-37EDF72D17DB}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\lusi_\\desktop\\library-management-system\\librarymanagementsystem\\librarymanagementsystem\\dataaddbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8527CF2F-A876-460F-8DBD-37EDF72D17DB}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\dataaddbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8527CF2F-A876-460F-8DBD-37EDF72D17DB}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\librarymanagementsystem\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -19,20 +27,12 @@
       "RelativeMoniker": "D:0:0:{8527CF2F-A876-460F-8DBD-37EDF72D17DB}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\returnbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8527CF2F-A876-460F-8DBD-37EDF72D17DB}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\librarymanagementsystem\\addbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8527CF2F-A876-460F-8DBD-37EDF72D17DB}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\addbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8527CF2F-A876-460F-8DBD-37EDF72D17DB}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\librarymanagementsystem\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8527CF2F-A876-460F-8DBD-37EDF72D17DB}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -56,14 +56,27 @@
               "RelativeDocumentMoniker": "LibraryManagementSystem\\AddBooks.cs",
               "ToolTip": "C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\LibraryManagementSystem\\AddBooks.cs",
               "RelativeToolTip": "LibraryManagementSystem\\AddBooks.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAwwEcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-31T05:17:23.452Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "DataAddBooks.cs",
+              "DocumentMoniker": "C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\LibraryManagementSystem\\DataAddBooks.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\DataAddBooks.cs",
+              "ToolTip": "C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\LibraryManagementSystem\\DataAddBooks.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\DataAddBooks.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAmwDwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T05:10:21.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AddBooks.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\LibraryManagementSystem\\AddBooks.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\AddBooks.cs",
@@ -75,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ReturnBooks.cs",
               "DocumentMoniker": "C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\LibraryManagementSystem\\ReturnBooks.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\ReturnBooks.cs",
@@ -83,12 +96,11 @@
               "RelativeToolTip": "LibraryManagementSystem\\ReturnBooks.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAqwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T06:16:40.146Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-26T06:16:40.146Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\LibraryManagementSystem\\MainForm.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\MainForm.cs",
@@ -96,24 +108,22 @@
               "RelativeToolTip": "LibraryManagementSystem\\MainForm.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAywEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T05:59:19.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T05:59:19.802Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\LibraryManagementSystem\\MainForm.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\MainForm.cs",
               "ToolTip": "C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\LibraryManagementSystem\\MainForm.cs [Design]",
               "RelativeToolTip": "LibraryManagementSystem\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T06:20:09.145Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-03-24T06:20:09.145Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "SQLQuery1.sql ",
               "DocumentMoniker": "C:\\Users\\lusi_\\Desktop\\Library-Management-System\\LibraryManagementSystem\\SQLQuery1.sql",
               "RelativeDocumentMoniker": "SQLQuery1.sql",

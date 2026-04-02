@@ -20,6 +20,8 @@ namespace LibraryManagementSystem
         public AddBooks()
         {
             InitializeComponent();
+
+            displayBooks();
         }
 
         private void addBooks_importBtn_Click(object sender, EventArgs e)
@@ -102,5 +104,14 @@ namespace LibraryManagementSystem
                 }
             }
         }
+
+        public void displayBooks()
+        {
+            DataAddBooks dab = new DataAddBooks();
+            List<DataAddBooks> listData = dab.addBooksData();
+
+            dataGridView1.DataSource = listData;
+        }
+
     }
 }

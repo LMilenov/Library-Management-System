@@ -32,10 +32,10 @@ namespace LibraryManagementSystem
                     using (SqlCommand cmd = new SqlCommand(selectData, connect))
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
-                        DataAddBooks dab = new DataAddBooks();
 
                         while (reader.Read())
                         {
+                            DataAddBooks dab = new DataAddBooks();
                             dab.Id = (int)reader["id"];
                             dab.BookTitle = reader["book_title"].ToString();
                             dab.Author = reader["author"].ToString();
