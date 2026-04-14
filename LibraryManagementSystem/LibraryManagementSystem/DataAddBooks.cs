@@ -15,6 +15,7 @@ namespace LibraryManagementSystem
         public string BookTitle { get; set; }
         public string Author { get; set; }
         public string Published { get; set; }
+        public string Image { get; set; }
         public string Status { get; set; }
 
         public List<DataAddBooks> addBooksData()
@@ -40,6 +41,7 @@ namespace LibraryManagementSystem
                             dab.BookTitle = reader["book_title"].ToString();
                             dab.Author = reader["author"].ToString();
                             dab.Published = reader["published_date"].ToString();
+                            dab.Image = reader["image"].ToString();
                             dab.Status = reader["status"].ToString();
 
                             listData.Add(dab);

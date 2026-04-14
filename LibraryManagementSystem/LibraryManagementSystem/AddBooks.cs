@@ -68,7 +68,7 @@ namespace LibraryManagementSystem
                             "VALUES(@bookTitle, @author, @published_date, @status, @image, @dateInsert)";
 
                         string path = Path.Combine(@"C:\Users\lusi_\Desktop\Library-Management-System\LibraryManagementSystem\LibraryManagementSystem\Books_Directory\" +
-                            addBooks_bookTitle.Text.Trim() + "_" + addBooks_author.Text.Trim() + ".jpg");
+                          addBooks_bookTitle.Text  + addBooks_author.Text.Trim() + ".jpg");
 
                         string directoryPath = Path.GetDirectoryName(path);
 
@@ -90,7 +90,11 @@ namespace LibraryManagementSystem
 
                             cmd.ExecuteNonQuery();
 
+                            displayBooks();
+
                             MessageBox.Show("Added successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            clearFields();
                         }
                     }
                     catch (Exception ex)
@@ -105,6 +109,16 @@ namespace LibraryManagementSystem
             }
         }
 
+        public void clearFields()
+        {
+            addBooks_bookTitle.Clear();
+            addBooks_author.Clear();
+            addBooks_picture.Image = null;
+            addBooks_published.Value = DateTime.Today;
+            addBooks_status.SelectedIndex = -1;
+
+        }
+
         public void displayBooks()
         {
             DataAddBooks dab = new DataAddBooks();
@@ -113,5 +127,34 @@ namespace LibraryManagementSystem
             dataGridView1.DataSource = listData;
         }
 
+        private int bookId = 0;
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex != -1)
+            {
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+                bookId = (int)row.Cells[0].Value;
+                addBooks_bookTitle.Text = row.Cells[1].Value.ToString();
+                addBooks_author.Text = row.Cells[2].Value.ToString();
+                addBooks_published.Text = row.Cells[3].Value.ToString();
+
+                string imagePath = row.Cells[4].Value.ToString();
+
+                if (imagePath != null || imagePath.Length >= 1)
+                {
+                   addBooks_picture.Image = Image.FromFile(imagePath);
+                }
+                else
+                {
+                    addBooks_picture.Image = null;
+                }
+                addBooks_status.Text = row.Cells[5].Value.ToString();
+            }
+        }
+
+        private void addBooks_clearBtn_Click(object sender, EventArgs e)
+        {
+            clearFields();
+        }
     }
 }
