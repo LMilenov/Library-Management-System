@@ -28,3 +28,25 @@ WHERE date_delete IS NULL
 
 ALTER TABLE books
 ADD  image VARCHAR(MAX) NULL
+
+DELETE FROM books
+
+CREATE TABLE issues
+(
+	id INT PRIMARY KEY IDENTITY(1,1),
+	issue_id VARCHAR(Max) NULL,
+	full_name VARCHAR(Max) NULL,
+	contact VARCHAR(Max) NULL,
+	email VARCHAR(Max) NULL,
+	book_title VARCHAR(Max) NULL,
+	author VARCHAR(Max) NULL,
+	image VARCHAR(MAX) NULL,
+	status VARCHAR(Max) NULL,
+	issue_date DATE NULL,
+	return_date DATE NULL,
+	date_insert DATE NULL,
+	date_update DATE NULL,
+	date_delete DATE NULL
+)
+
+SELECT * FROM issues

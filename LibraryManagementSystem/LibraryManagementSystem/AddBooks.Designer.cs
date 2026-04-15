@@ -176,6 +176,7 @@
             this.addBooks_deleteBtn.TabIndex = 21;
             this.addBooks_deleteBtn.Text = "DELETE";
             this.addBooks_deleteBtn.UseVisualStyleBackColor = false;
+            this.addBooks_deleteBtn.Click += new System.EventHandler(this.addBooks_deleteBtn_Click);
             // 
             // addBooks_status
             // 
@@ -231,6 +232,7 @@
             this.addBooks_updateBtn.TabIndex = 16;
             this.addBooks_updateBtn.Text = "UPDATE";
             this.addBooks_updateBtn.UseVisualStyleBackColor = false;
+            this.addBooks_updateBtn.Click += new System.EventHandler(this.addBooks_updateBtn_Click);
             // 
             // addBooks_addBtn
             // 

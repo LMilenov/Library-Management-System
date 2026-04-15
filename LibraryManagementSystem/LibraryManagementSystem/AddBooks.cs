@@ -51,7 +51,8 @@ namespace LibraryManagementSystem
                 || addBooks_bookTitle.Text == ""
                 || addBooks_author.Text == ""
                 || addBooks_published.Value == null
-                || addBooks_status.Text == "")
+                || addBooks_status.Text == ""
+                || addBooks_picture.Image == null)
             {
                 MessageBox.Show("Please fill all blank fields.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -155,6 +156,122 @@ namespace LibraryManagementSystem
         private void addBooks_clearBtn_Click(object sender, EventArgs e)
         {
             clearFields();
+        }
+
+        private void addBooks_updateBtn_Click(object sender, EventArgs e)
+        {
+            if (addBooks_picture.Image == null
+               || addBooks_bookTitle.Text == ""
+               || addBooks_author.Text == ""
+               || addBooks_published.Value == null
+               || addBooks_status.Text == ""
+               || addBooks_picture.Image == null)
+            {
+                MessageBox.Show("Please select item first", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if(connect.State != ConnectionState.Open)
+                {
+                    DialogResult check = MessageBox.Show("Are you sure you want to UPDATE Book ID:" + bookId + "?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if(check == DialogResult.Yes)
+                    {
+                        try
+                        {
+                            connect.Open();
+                            DateTime today = DateTime.Today;
+                            string updateData = "UPDATE books SET book_title = @bookTitle" +
+                                ", author = @author, published_date = @published" +
+                                ", status = @status, date_update = @dateUpdate WHERE id = @id";
+
+                            using (SqlCommand cmd = new SqlCommand(updateData, connect))
+                            {
+                                cmd.Parameters.AddWithValue("@bookTitle", addBooks_bookTitle.Text.Trim());
+                                cmd.Parameters.AddWithValue("@author", addBooks_author.Text.Trim());
+                                cmd.Parameters.AddWithValue("@published", addBooks_published.Value);
+                                cmd.Parameters.AddWithValue("@status", addBooks_status.Text.Trim());
+                                cmd.Parameters.AddWithValue("@dateUpdate", today);
+                                cmd.Parameters.AddWithValue("@id", bookId);
+
+                                cmd.ExecuteNonQuery();
+
+                                displayBooks();
+
+                                MessageBox.Show("Updated successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                clearFields();
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error: " + ex, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        finally
+                        {
+                            connect.Close();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cancelled.",  "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+        }
+
+        private void addBooks_deleteBtn_Click(object sender, EventArgs e)
+        {
+            if (addBooks_picture.Image == null
+               || addBooks_bookTitle.Text == ""
+               || addBooks_author.Text == ""
+               || addBooks_published.Value == null
+               || addBooks_status.Text == ""
+               || addBooks_picture.Image == null)
+            {
+                MessageBox.Show("Please select item first", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if (connect.State != ConnectionState.Open)
+                {
+                    DialogResult check = MessageBox.Show("Are you sure you want to DELETE Book ID:" + bookId + "?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (check == DialogResult.Yes)
+                    {
+                        try
+                        {
+                            connect.Open();
+                            DateTime today = DateTime.Today;
+                            string updateData = "UPDATE books SET date_delete = @dateDelete WHERE id = @id";
+
+                            using (SqlCommand cmd = new SqlCommand(updateData, connect))
+                            {
+                                cmd.Parameters.AddWithValue("@dateDelete", today);
+                                cmd.Parameters.AddWithValue("@id", bookId);
+
+                                cmd.ExecuteNonQuery();
+
+                                displayBooks();
+
+                                MessageBox.Show("Deleted successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                clearFields();
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error: " + ex, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        finally
+                        {
+                            connect.Close();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cancelled.", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
         }
     }
 }
