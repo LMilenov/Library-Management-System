@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.bookIssue_status = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.bookIssue_clearBtn = new System.Windows.Forms.Button();
+            this.bookIssue_deleteBtn = new System.Windows.Forms.Button();
+            this.bookIssue_updateBtn = new System.Windows.Forms.Button();
+            this.bookIssue_addBtn = new System.Windows.Forms.Button();
+            this.bookIssue_returnDate = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.bookIssue_issueDate = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.bookIssue_picture = new System.Windows.Forms.PictureBox();
+            this.bookIssue_author = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.bookIssue_bookTitle = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.bookIssue_id = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.bookIssue_email = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.bookIssue_contact = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.bookIssue_name = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookIssue_picture)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -64,96 +64,116 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Controls.Add(this.comboBox3);
+            this.panel1.Controls.Add(this.bookIssue_status);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.dateTimePicker2);
+            this.panel1.Controls.Add(this.bookIssue_clearBtn);
+            this.panel1.Controls.Add(this.bookIssue_deleteBtn);
+            this.panel1.Controls.Add(this.bookIssue_updateBtn);
+            this.panel1.Controls.Add(this.bookIssue_addBtn);
+            this.panel1.Controls.Add(this.bookIssue_returnDate);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.bookIssue_issueDate);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.bookIssue_picture);
+            this.panel1.Controls.Add(this.bookIssue_author);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.bookIssue_bookTitle);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.bookIssue_id);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.bookIssue_email);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.bookIssue_contact);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.bookIssue_name);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(18, 353);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(845, 199);
             this.panel1.TabIndex = 0;
             // 
-            // button3
+            // bookIssue_status
             // 
-            this.button3.BackColor = System.Drawing.Color.SeaGreen;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(506, 163);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 33);
-            this.button3.TabIndex = 20;
-            this.button3.Text = "CLEAR";
-            this.button3.UseVisualStyleBackColor = false;
+            this.bookIssue_status.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bookIssue_status.FormattingEnabled = true;
+            this.bookIssue_status.Location = new System.Drawing.Point(558, 12);
+            this.bookIssue_status.Name = "bookIssue_status";
+            this.bookIssue_status.Size = new System.Drawing.Size(145, 24);
+            this.bookIssue_status.TabIndex = 22;
             // 
-            // button4
+            // label10
             // 
-            this.button4.BackColor = System.Drawing.Color.SeaGreen;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(385, 163);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 33);
-            this.button4.TabIndex = 19;
-            this.button4.Text = "DELETE";
-            this.button4.UseVisualStyleBackColor = false;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(513, 15);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(48, 16);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Status:";
             // 
-            // button2
+            // bookIssue_clearBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.SeaGreen;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(264, 163);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 33);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "UPDATE";
-            this.button2.UseVisualStyleBackColor = false;
+            this.bookIssue_clearBtn.BackColor = System.Drawing.Color.SeaGreen;
+            this.bookIssue_clearBtn.FlatAppearance.BorderSize = 0;
+            this.bookIssue_clearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bookIssue_clearBtn.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bookIssue_clearBtn.ForeColor = System.Drawing.Color.White;
+            this.bookIssue_clearBtn.Location = new System.Drawing.Point(506, 163);
+            this.bookIssue_clearBtn.Name = "bookIssue_clearBtn";
+            this.bookIssue_clearBtn.Size = new System.Drawing.Size(100, 33);
+            this.bookIssue_clearBtn.TabIndex = 20;
+            this.bookIssue_clearBtn.Text = "CLEAR";
+            this.bookIssue_clearBtn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // bookIssue_deleteBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.SeaGreen;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(143, 163);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 33);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "ADD";
-            this.button1.UseVisualStyleBackColor = false;
+            this.bookIssue_deleteBtn.BackColor = System.Drawing.Color.SeaGreen;
+            this.bookIssue_deleteBtn.FlatAppearance.BorderSize = 0;
+            this.bookIssue_deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bookIssue_deleteBtn.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bookIssue_deleteBtn.ForeColor = System.Drawing.Color.White;
+            this.bookIssue_deleteBtn.Location = new System.Drawing.Point(385, 163);
+            this.bookIssue_deleteBtn.Name = "bookIssue_deleteBtn";
+            this.bookIssue_deleteBtn.Size = new System.Drawing.Size(100, 33);
+            this.bookIssue_deleteBtn.TabIndex = 19;
+            this.bookIssue_deleteBtn.Text = "DELETE";
+            this.bookIssue_deleteBtn.UseVisualStyleBackColor = false;
             // 
-            // dateTimePicker2
+            // bookIssue_updateBtn
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(325, 117);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(170, 20);
-            this.dateTimePicker2.TabIndex = 16;
+            this.bookIssue_updateBtn.BackColor = System.Drawing.Color.SeaGreen;
+            this.bookIssue_updateBtn.FlatAppearance.BorderSize = 0;
+            this.bookIssue_updateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bookIssue_updateBtn.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bookIssue_updateBtn.ForeColor = System.Drawing.Color.White;
+            this.bookIssue_updateBtn.Location = new System.Drawing.Point(264, 163);
+            this.bookIssue_updateBtn.Name = "bookIssue_updateBtn";
+            this.bookIssue_updateBtn.Size = new System.Drawing.Size(100, 33);
+            this.bookIssue_updateBtn.TabIndex = 18;
+            this.bookIssue_updateBtn.Text = "UPDATE";
+            this.bookIssue_updateBtn.UseVisualStyleBackColor = false;
+            // 
+            // bookIssue_addBtn
+            // 
+            this.bookIssue_addBtn.BackColor = System.Drawing.Color.SeaGreen;
+            this.bookIssue_addBtn.FlatAppearance.BorderSize = 0;
+            this.bookIssue_addBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bookIssue_addBtn.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bookIssue_addBtn.ForeColor = System.Drawing.Color.White;
+            this.bookIssue_addBtn.Location = new System.Drawing.Point(143, 163);
+            this.bookIssue_addBtn.Name = "bookIssue_addBtn";
+            this.bookIssue_addBtn.Size = new System.Drawing.Size(100, 33);
+            this.bookIssue_addBtn.TabIndex = 17;
+            this.bookIssue_addBtn.Text = "ADD";
+            this.bookIssue_addBtn.UseVisualStyleBackColor = false;
+            this.bookIssue_addBtn.Click += new System.EventHandler(this.bookIssue_addBtn_Click);
+            // 
+            // bookIssue_returnDate
+            // 
+            this.bookIssue_returnDate.Location = new System.Drawing.Point(325, 117);
+            this.bookIssue_returnDate.Name = "bookIssue_returnDate";
+            this.bookIssue_returnDate.Size = new System.Drawing.Size(170, 20);
+            this.bookIssue_returnDate.TabIndex = 16;
             // 
             // label9
             // 
@@ -165,12 +185,12 @@
             this.label9.TabIndex = 15;
             this.label9.Text = "Return:";
             // 
-            // dateTimePicker1
+            // bookIssue_issueDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(325, 81);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(170, 20);
-            this.dateTimePicker1.TabIndex = 14;
+            this.bookIssue_issueDate.Location = new System.Drawing.Point(325, 81);
+            this.bookIssue_issueDate.Name = "bookIssue_issueDate";
+            this.bookIssue_issueDate.Size = new System.Drawing.Size(170, 20);
+            this.bookIssue_issueDate.TabIndex = 14;
             // 
             // label8
             // 
@@ -182,23 +202,23 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "Issue:";
             // 
-            // pictureBox1
+            // bookIssue_picture
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox1.Location = new System.Drawing.Point(728, 15);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            this.bookIssue_picture.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.bookIssue_picture.Location = new System.Drawing.Point(728, 15);
+            this.bookIssue_picture.Name = "bookIssue_picture";
+            this.bookIssue_picture.Size = new System.Drawing.Size(100, 100);
+            this.bookIssue_picture.TabIndex = 12;
+            this.bookIssue_picture.TabStop = false;
             // 
-            // comboBox2
+            // bookIssue_author
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(325, 45);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(145, 24);
-            this.comboBox2.TabIndex = 11;
+            this.bookIssue_author.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bookIssue_author.FormattingEnabled = true;
+            this.bookIssue_author.Location = new System.Drawing.Point(325, 45);
+            this.bookIssue_author.Name = "bookIssue_author";
+            this.bookIssue_author.Size = new System.Drawing.Size(145, 24);
+            this.bookIssue_author.TabIndex = 11;
             // 
             // label7
             // 
@@ -210,14 +230,15 @@
             this.label7.TabIndex = 10;
             this.label7.Text = "Author:";
             // 
-            // comboBox1
+            // bookIssue_bookTitle
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(325, 11);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(145, 24);
-            this.comboBox1.TabIndex = 9;
+            this.bookIssue_bookTitle.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bookIssue_bookTitle.FormattingEnabled = true;
+            this.bookIssue_bookTitle.Location = new System.Drawing.Point(325, 11);
+            this.bookIssue_bookTitle.Name = "bookIssue_bookTitle";
+            this.bookIssue_bookTitle.Size = new System.Drawing.Size(145, 24);
+            this.bookIssue_bookTitle.TabIndex = 9;
+            this.bookIssue_bookTitle.SelectedIndexChanged += new System.EventHandler(this.bookIssue_bookTitle_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -229,13 +250,13 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Book Title:";
             // 
-            // textBox4
+            // bookIssue_id
             // 
-            this.textBox4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(86, 12);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(145, 23);
-            this.textBox4.TabIndex = 7;
+            this.bookIssue_id.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bookIssue_id.Location = new System.Drawing.Point(86, 12);
+            this.bookIssue_id.Name = "bookIssue_id";
+            this.bookIssue_id.Size = new System.Drawing.Size(145, 23);
+            this.bookIssue_id.TabIndex = 7;
             // 
             // label5
             // 
@@ -247,13 +268,13 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Issue ID:";
             // 
-            // textBox3
+            // bookIssue_email
             // 
-            this.textBox3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(86, 118);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(145, 23);
-            this.textBox3.TabIndex = 5;
+            this.bookIssue_email.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bookIssue_email.Location = new System.Drawing.Point(86, 118);
+            this.bookIssue_email.Name = "bookIssue_email";
+            this.bookIssue_email.Size = new System.Drawing.Size(145, 23);
+            this.bookIssue_email.TabIndex = 5;
             // 
             // label4
             // 
@@ -265,13 +286,13 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Email:";
             // 
-            // textBox2
+            // bookIssue_contact
             // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(86, 81);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(145, 23);
-            this.textBox2.TabIndex = 3;
+            this.bookIssue_contact.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bookIssue_contact.Location = new System.Drawing.Point(86, 81);
+            this.bookIssue_contact.Name = "bookIssue_contact";
+            this.bookIssue_contact.Size = new System.Drawing.Size(145, 23);
+            this.bookIssue_contact.TabIndex = 3;
             // 
             // label3
             // 
@@ -283,13 +304,13 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Contact #:";
             // 
-            // textBox1
+            // bookIssue_name
             // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(86, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(145, 23);
-            this.textBox1.TabIndex = 1;
+            this.bookIssue_name.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bookIssue_name.Location = new System.Drawing.Point(86, 46);
+            this.bookIssue_name.Name = "bookIssue_name";
+            this.bookIssue_name.Size = new System.Drawing.Size(145, 23);
+            this.bookIssue_name.TabIndex = 1;
             // 
             // label2
             // 
@@ -330,25 +351,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(812, 234);
             this.dataGridView1.TabIndex = 0;
             // 
-            // comboBox3
-            // 
-            this.comboBox3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(558, 12);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(145, 24);
-            this.comboBox3.TabIndex = 22;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(513, 15);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(48, 16);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "Status:";
-            // 
             // IssueBooks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -359,7 +361,7 @@
             this.Size = new System.Drawing.Size(880, 565);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookIssue_picture)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -372,29 +374,29 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox bookIssue_name;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox bookIssue_id;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox bookIssue_email;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox bookIssue_contact;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.PictureBox bookIssue_picture;
+        private System.Windows.Forms.ComboBox bookIssue_author;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox bookIssue_bookTitle;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Button bookIssue_addBtn;
+        private System.Windows.Forms.DateTimePicker bookIssue_returnDate;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.DateTimePicker bookIssue_issueDate;
+        private System.Windows.Forms.Button bookIssue_clearBtn;
+        private System.Windows.Forms.Button bookIssue_deleteBtn;
+        private System.Windows.Forms.Button bookIssue_updateBtn;
+        private System.Windows.Forms.ComboBox bookIssue_status;
         private System.Windows.Forms.Label label10;
     }
 }
