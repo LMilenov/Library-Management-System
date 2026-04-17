@@ -34,7 +34,7 @@ namespace LibraryManagementSystem
                 try
                 {
                     connect.Open();
-                    string selectData = "SELECT * FROM books WHERE status = 'Available' AND date_delete IS NULL";
+                    string selectData = "SELECT id, book_title FROM books WHERE status = 'Available' AND date_delete IS NULL";
 
                     using (SqlCommand cmd = new SqlCommand(selectData, connect))
                     {
@@ -60,21 +60,51 @@ namespace LibraryManagementSystem
 
         private void bookIssue_bookTitle_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(bookIssue_bookTitle.SelectedValue != null)
+            if(connect.State != ConnectionState.Open)
             {
-                int selectID = Convert.ToInt32(bookIssue_bookTitle.SelectedValue);
+                if (bookIssue_bookTitle.SelectedValue != null)
+                {
+                    DataRowView selectedRow = (DataRowView)bookIssue_bookTitle.SelectedItem;
+                    int selectID = Convert.ToInt32(selectedRow["id"]);
+                    try
+                    {
+                        connect.Open();
 
-                try
-                {
-                    connect.Open();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                finally
-                {
-                    connect.Close();
+                        string selectData = "SELECT * FROM books WHERE id = @id";
+
+                        using (SqlCommand cmd = new SqlCommand(selectData, connect))
+                        {
+                            cmd.Parameters.AddWithValue("@id", selectID);
+
+                            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                            DataTable table = new DataTable();
+                            adapter.Fill(table);
+
+                            if (table.Rows.Count > 0)
+                            {
+                                bookIssue_author.Text = table.Rows[0]["author"].ToString();
+
+                                string imagePath = table.Rows[0]["image"].ToString();
+
+                                if (imagePath != null)
+                                {
+                                    bookIssue_picture.Image = Image.FromFile(imagePath);
+                                }
+                                else
+                                {
+                                    bookIssue_picture.Image = null;
+                                }
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    finally
+                    {
+                        connect.Close();
+                    }
                 }
             }
         }

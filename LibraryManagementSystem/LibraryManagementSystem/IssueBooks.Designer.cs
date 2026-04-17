@@ -96,6 +96,9 @@
             // 
             this.bookIssue_status.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bookIssue_status.FormattingEnabled = true;
+            this.bookIssue_status.Items.AddRange(new object[] {
+            "Return",
+            "Not Return"});
             this.bookIssue_status.Location = new System.Drawing.Point(558, 12);
             this.bookIssue_status.Name = "bookIssue_status";
             this.bookIssue_status.Size = new System.Drawing.Size(145, 24);
