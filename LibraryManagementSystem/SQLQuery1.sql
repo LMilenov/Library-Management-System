@@ -50,3 +50,6 @@ CREATE TABLE issues
 )
 
 SELECT * FROM issues
+
+ALTER TABLE issues
+DROP COLUMN image

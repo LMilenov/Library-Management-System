@@ -20,11 +20,91 @@ namespace LibraryManagementSystem
             InitializeComponent();
 
             DataBookTitle();
+            displayBookIssueData();
+        }
+
+        public void displayBookIssueData()
+        {
+            DataIssueBooks dib = new DataIssueBooks();
+            List<DataIssueBooks> listData = dib.IssueBooksData();
+
+            dataGridView1.DataSource = listData;
         }
 
         private void bookIssue_addBtn_Click(object sender, EventArgs e)
         {
+            if (bookIssue_id.Text == ""
+                || bookIssue_name.Text == ""
+                || bookIssue_contact.Text == ""
+                || bookIssue_email.Text == ""
+                || bookIssue_bookTitle.Text == ""
+                || bookIssue_author.Text == ""
+                || bookIssue_issueDate.Value == null
+                || bookIssue_returnDate.Value == null
+                || bookIssue_status.Text == ""
+                || bookIssue_picture.Image == null)               
+            {
+                MessageBox.Show("Please fill all blank fields.", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if(connect.State != ConnectionState.Open)
+                {
+                    try
+                    {
+                        DateTime today = DateTime.Now;
+                        connect.Open();
+                        string insertData = "INSERT INTO issues " +
+                            "(issue_id, full_name, contact, email, book_title" +
+                            ", author, status, issue_date, return_date, date_insert) " +
+                            "VALUES (@issueID, @fullname, @contact, @email, @bookTitle, @author" +
+                            ", @status,  @issueDate, @returnDate, @dateInsert)";
+                        using (SqlCommand cmd = new SqlCommand(insertData, connect))
+                        {
+                            cmd.Parameters.AddWithValue("@issueID", bookIssue_id.Text.Trim());
+                            cmd.Parameters.AddWithValue("@fullname", bookIssue_name.Text.Trim());
+                            cmd.Parameters.AddWithValue("@contact", bookIssue_contact.Text.Trim());
+                            cmd.Parameters.AddWithValue("@email", bookIssue_email.Text.Trim());
+                            cmd.Parameters.AddWithValue("@bookTitle", bookIssue_bookTitle.Text.Trim());
+                            cmd.Parameters.AddWithValue("@author", bookIssue_author.Text.Trim());
+                            cmd.Parameters.AddWithValue("@status", bookIssue_status.Text.Trim());
+                            cmd.Parameters.AddWithValue("@issueDate", bookIssue_issueDate.Value);
+                            cmd.Parameters.AddWithValue("@returnDate", bookIssue_returnDate.Value);
+                            cmd.Parameters.AddWithValue("@dateInsert", today);
 
+                            cmd.ExecuteNonQuery();
+
+                            displayBookIssueData();
+
+                            MessageBox.Show("Issued successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            clearFields();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    finally
+                    {
+                        connect.Close();
+                    }
+                }
+            }
+        }
+
+        public void clearFields()
+        {
+            bookIssue_id.Text = "";
+            bookIssue_name.Text = "";
+            bookIssue_contact.Text = "";
+            bookIssue_email.Text = "";
+            bookIssue_bookTitle.SelectedIndex = -1;
+            bookIssue_author.SelectedIndex = -1;
+            bookIssue_issueDate = null;
+            bookIssue_returnDate = null;
+            bookIssue_status.SelectedIndex = -1;
+            bookIssue_picture.Image = null;
         }
 
         public void DataBookTitle()
@@ -106,6 +186,24 @@ namespace LibraryManagementSystem
                         connect.Close();
                     }
                 }
+            }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex != -1)
+            {
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+                bookIssue_id.Text = row.Cells[1].Value.ToString();
+                bookIssue_name.Text = row.Cells[2].Value.ToString();
+                bookIssue_contact.Text = row.Cells[3].Value.ToString();
+                bookIssue_bookTitle.Text = row.Cells[4].Value.ToString();
+                bookIssue_author.Text = row.Cells[3].Value.ToString();
+                bookIssue_id.Text = row.Cells[1].Value.ToString();
+
+                bookIssue_author.Text = row.Cells[3].Value.ToString();
+                bookIssue_id.Text = row.Cells[1].Value.ToString();
+
             }
         }
     }
