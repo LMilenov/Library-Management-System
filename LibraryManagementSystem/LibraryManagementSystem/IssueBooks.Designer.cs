@@ -127,6 +127,7 @@
             this.bookIssue_clearBtn.TabIndex = 20;
             this.bookIssue_clearBtn.Text = "CLEAR";
             this.bookIssue_clearBtn.UseVisualStyleBackColor = false;
+            this.bookIssue_clearBtn.Click += new System.EventHandler(this.bookIssue_clearBtn_Click);
             // 
             // bookIssue_deleteBtn
             // 
@@ -141,6 +142,7 @@
             this.bookIssue_deleteBtn.TabIndex = 19;
             this.bookIssue_deleteBtn.Text = "DELETE";
             this.bookIssue_deleteBtn.UseVisualStyleBackColor = false;
+            this.bookIssue_deleteBtn.Click += new System.EventHandler(this.bookIssue_deleteBtn_Click);
             // 
             // bookIssue_updateBtn
             // 
@@ -155,6 +157,7 @@
             this.bookIssue_updateBtn.TabIndex = 18;
             this.bookIssue_updateBtn.Text = "UPDATE";
             this.bookIssue_updateBtn.UseVisualStyleBackColor = false;
+            this.bookIssue_updateBtn.Click += new System.EventHandler(this.bookIssue_updateBtn_Click);
             // 
             // bookIssue_addBtn
             // 
@@ -329,8 +332,8 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(18, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(845, 322);
@@ -349,11 +352,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 70);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 60);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(812, 234);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.Size = new System.Drawing.Size(812, 248);
+            this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick_1);
             // 
             // IssueBooks
             // 
@@ -377,7 +380,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox bookIssue_name;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -402,5 +404,6 @@
         private System.Windows.Forms.Button bookIssue_updateBtn;
         private System.Windows.Forms.ComboBox bookIssue_status;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
