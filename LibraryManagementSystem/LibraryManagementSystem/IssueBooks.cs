@@ -190,19 +190,7 @@ namespace LibraryManagementSystem
 
         private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex != -1)
-            {
-                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-                bookIssue_id.Text = row.Cells[1].Value.ToString();
-                bookIssue_name.Text = row.Cells[2].Value.ToString();
-                bookIssue_contact.Text = row.Cells[3].Value.ToString();
-                bookIssue_email.Text = row.Cells[4].Value.ToString();
-                bookIssue_bookTitle.Text = row.Cells[5].Value.ToString();
-                bookIssue_author.Text = row.Cells[6].Value.ToString();
-                bookIssue_issueDate.Text = row.Cells[7].Value.ToString();
-                bookIssue_returnDate.Text = row.Cells[8].Value.ToString();
-                bookIssue_status.Text = row.Cells[9].Value.ToString();
-            }
+            
         }
 
         private void bookIssue_updateBtn_Click(object sender, EventArgs e)
@@ -336,6 +324,23 @@ namespace LibraryManagementSystem
         private void bookIssue_clearBtn_Click(object sender, EventArgs e)
         {
             clearFields();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex != -1)
+            {
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+                bookIssue_id.Text = row.Cells[1].Value.ToString();
+                bookIssue_name.Text = row.Cells[2].Value.ToString();
+                bookIssue_contact.Text = row.Cells[3].Value.ToString();
+                bookIssue_email.Text = row.Cells[4].Value.ToString();
+                bookIssue_bookTitle.Text = row.Cells[5].Value.ToString();
+                bookIssue_author.Text = row.Cells[6].Value.ToString();
+                bookIssue_issueDate.Text = row.Cells[7].Value.ToString();
+                bookIssue_returnDate.Text = row.Cells[8].Value.ToString();
+                bookIssue_status.Text = row.Cells[9].Value.ToString();
+            }
         }
     }
 }
