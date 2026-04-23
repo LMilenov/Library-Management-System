@@ -20,10 +20,21 @@ namespace LibraryManagementSystem
         {
             InitializeComponent();
 
-            DataBookTitle();
             displayBookIssueData();
+            DataBookTitle();
+          
         }
 
+        public void refreshData()
+        {
+            if (InvokeRequired)
+            {
+                Invoke((MethodInvoker)refreshData);
+                return;
+            }
+            displayBookIssueData();
+            DataBookTitle();
+        }
         public void displayBookIssueData()
         {
             DataIssueBooks dib = new DataIssueBooks();

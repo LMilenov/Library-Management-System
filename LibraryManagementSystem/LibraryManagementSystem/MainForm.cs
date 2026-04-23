@@ -40,6 +40,12 @@ namespace LibraryManagementSystem
             addBooks1.Visible = false;
             returnBooks1.Visible = false;
             issueBooks1.Visible = false;
+
+            Dashboard dForm = dashboard1 as Dashboard;
+            if (dForm != null)
+            {
+                dForm.refreshData();
+            }
         }
 
         private void addBooks_btn_Click(object sender, EventArgs e)
@@ -48,6 +54,12 @@ namespace LibraryManagementSystem
             addBooks1.Visible = true;
             returnBooks1.Visible = false;
             issueBooks1.Visible = false;
+
+            AddBooks aForm = addBooks1 as AddBooks;
+            if (aForm != null)
+            {
+                aForm.refreshData();
+            }
         }
 
         private void IssueBooks_btn_Click(object sender, EventArgs e)
@@ -56,6 +68,12 @@ namespace LibraryManagementSystem
             addBooks1.Visible = false;
             returnBooks1.Visible = false;
             issueBooks1.Visible = true;
+
+            ReturnBooks rForm = returnBooks1 as ReturnBooks;
+            if (rForm != null)
+            {
+                rForm.refreshData();
+            }
         }
 
         private void return_btn_Click(object sender, EventArgs e)
@@ -64,6 +82,12 @@ namespace LibraryManagementSystem
             addBooks1.Visible = false;
             returnBooks1.Visible = true;
             issueBooks1.Visible = false;
+
+            IssueBooks iForm = issueBooks1 as IssueBooks;
+            if (iForm != null)
+            {
+                iForm.refreshData();
+            }
         }
     }
 }

@@ -33,22 +33,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.logout_btn = new System.Windows.Forms.Button();
-            this.return_btn = new System.Windows.Forms.Button();
-            this.IssueBooks_btn = new System.Windows.Forms.Button();
-            this.addBooks_btn = new System.Windows.Forms.Button();
-            this.dashboard_btn = new System.Windows.Forms.Button();
             this.greet_label = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dashboard1 = new LibraryManagementSystem.Dashboard();
             this.addBooks1 = new LibraryManagementSystem.AddBooks();
             this.issueBooks1 = new LibraryManagementSystem.IssueBooks();
             this.returnBooks1 = new LibraryManagementSystem.ReturnBooks();
+            this.logout_btn = new System.Windows.Forms.Button();
+            this.return_btn = new System.Windows.Forms.Button();
+            this.IssueBooks_btn = new System.Windows.Forms.Button();
+            this.addBooks_btn = new System.Windows.Forms.Button();
+            this.dashboard_btn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -115,6 +115,57 @@
             this.label4.Size = new System.Drawing.Size(49, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Log out";
+            // 
+            // greet_label
+            // 
+            this.greet_label.AutoSize = true;
+            this.greet_label.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.greet_label.ForeColor = System.Drawing.Color.White;
+            this.greet_label.Location = new System.Drawing.Point(45, 135);
+            this.greet_label.Name = "greet_label";
+            this.greet_label.Size = new System.Drawing.Size(130, 19);
+            this.greet_label.TabIndex = 1;
+            this.greet_label.Text = "Welcome, Admin";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dashboard1);
+            this.panel3.Controls.Add(this.addBooks1);
+            this.panel3.Controls.Add(this.issueBooks1);
+            this.panel3.Controls.Add(this.returnBooks1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(220, 35);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(880, 565);
+            this.panel3.TabIndex = 2;
+            // 
+            // dashboard1
+            // 
+            this.dashboard1.Location = new System.Drawing.Point(0, 0);
+            this.dashboard1.Name = "dashboard1";
+            this.dashboard1.Size = new System.Drawing.Size(880, 565);
+            this.dashboard1.TabIndex = 3;
+            // 
+            // addBooks1
+            // 
+            this.addBooks1.Location = new System.Drawing.Point(0, 0);
+            this.addBooks1.Name = "addBooks1";
+            this.addBooks1.Size = new System.Drawing.Size(887, 580);
+            this.addBooks1.TabIndex = 2;
+            // 
+            // issueBooks1
+            // 
+            this.issueBooks1.Location = new System.Drawing.Point(0, 0);
+            this.issueBooks1.Name = "issueBooks1";
+            this.issueBooks1.Size = new System.Drawing.Size(895, 577);
+            this.issueBooks1.TabIndex = 1;
+            // 
+            // returnBooks1
+            // 
+            this.returnBooks1.Location = new System.Drawing.Point(0, 0);
+            this.returnBooks1.Name = "returnBooks1";
+            this.returnBooks1.Size = new System.Drawing.Size(880, 565);
+            this.returnBooks1.TabIndex = 0;
             // 
             // logout_btn
             // 
@@ -189,6 +240,8 @@
             this.dashboard_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
             this.dashboard_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dashboard_btn.ForeColor = System.Drawing.Color.White;
+            this.dashboard_btn.Image = global::LibraryManagementSystem.Properties.Resources.icons8_dashboard_32px;
+            this.dashboard_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dashboard_btn.Location = new System.Drawing.Point(6, 193);
             this.dashboard_btn.Name = "dashboard_btn";
             this.dashboard_btn.Size = new System.Drawing.Size(200, 45);
@@ -196,17 +249,6 @@
             this.dashboard_btn.Text = "DASHBOARD";
             this.dashboard_btn.UseVisualStyleBackColor = true;
             this.dashboard_btn.Click += new System.EventHandler(this.dashboard_btn_Click);
-            // 
-            // greet_label
-            // 
-            this.greet_label.AutoSize = true;
-            this.greet_label.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.greet_label.ForeColor = System.Drawing.Color.White;
-            this.greet_label.Location = new System.Drawing.Point(45, 135);
-            this.greet_label.Name = "greet_label";
-            this.greet_label.Size = new System.Drawing.Size(130, 19);
-            this.greet_label.TabIndex = 1;
-            this.greet_label.Text = "Welcome, Admin";
             // 
             // pictureBox1
             // 
@@ -216,46 +258,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.dashboard1);
-            this.panel3.Controls.Add(this.addBooks1);
-            this.panel3.Controls.Add(this.issueBooks1);
-            this.panel3.Controls.Add(this.returnBooks1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(220, 35);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(880, 565);
-            this.panel3.TabIndex = 2;
-            // 
-            // dashboard1
-            // 
-            this.dashboard1.Location = new System.Drawing.Point(0, 0);
-            this.dashboard1.Name = "dashboard1";
-            this.dashboard1.Size = new System.Drawing.Size(880, 565);
-            this.dashboard1.TabIndex = 3;
-            // 
-            // addBooks1
-            // 
-            this.addBooks1.Location = new System.Drawing.Point(0, 0);
-            this.addBooks1.Name = "addBooks1";
-            this.addBooks1.Size = new System.Drawing.Size(887, 580);
-            this.addBooks1.TabIndex = 2;
-            // 
-            // issueBooks1
-            // 
-            this.issueBooks1.Location = new System.Drawing.Point(0, 0);
-            this.issueBooks1.Name = "issueBooks1";
-            this.issueBooks1.Size = new System.Drawing.Size(895, 577);
-            this.issueBooks1.TabIndex = 1;
-            // 
-            // returnBooks1
-            // 
-            this.returnBooks1.Location = new System.Drawing.Point(0, 0);
-            this.returnBooks1.Name = "returnBooks1";
-            this.returnBooks1.Size = new System.Drawing.Size(880, 565);
-            this.returnBooks1.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -273,8 +275,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

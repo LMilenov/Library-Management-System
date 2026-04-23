@@ -24,6 +24,16 @@ namespace LibraryManagementSystem
             displayBooks();
         }
 
+        public void refreshData()
+        {
+            if (InvokeRequired)
+            {
+                Invoke((MethodInvoker)refreshData);
+                return;
+            }
+            displayBooks();
+        }
+
         private void addBooks_importBtn_Click(object sender, EventArgs e)
         {
             String imagePath = "";

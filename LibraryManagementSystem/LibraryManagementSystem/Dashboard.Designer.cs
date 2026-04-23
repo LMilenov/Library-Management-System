@@ -30,14 +30,15 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.dashboard_RB = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.dashboard_IB = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.dashboard_AB = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -45,6 +46,7 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,7 +67,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.SeaGreen;
-            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.dashboard_RB);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Location = new System.Drawing.Point(594, 18);
@@ -73,16 +75,16 @@
             this.panel4.Size = new System.Drawing.Size(233, 163);
             this.panel4.TabIndex = 3;
             // 
-            // label5
+            // dashboard_RB
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(189, 117);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(30, 33);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "0";
+            this.dashboard_RB.AutoSize = true;
+            this.dashboard_RB.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dashboard_RB.ForeColor = System.Drawing.Color.White;
+            this.dashboard_RB.Location = new System.Drawing.Point(189, 117);
+            this.dashboard_RB.Name = "dashboard_RB";
+            this.dashboard_RB.Size = new System.Drawing.Size(30, 33);
+            this.dashboard_RB.TabIndex = 2;
+            this.dashboard_RB.Text = "0";
             // 
             // label6
             // 
@@ -98,7 +100,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.SeaGreen;
-            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.dashboard_IB);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(310, 18);
@@ -106,16 +108,16 @@
             this.panel3.Size = new System.Drawing.Size(233, 163);
             this.panel3.TabIndex = 3;
             // 
-            // label3
+            // dashboard_IB
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(189, 117);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 33);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "0";
+            this.dashboard_IB.AutoSize = true;
+            this.dashboard_IB.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dashboard_IB.ForeColor = System.Drawing.Color.White;
+            this.dashboard_IB.Location = new System.Drawing.Point(189, 117);
+            this.dashboard_IB.Name = "dashboard_IB";
+            this.dashboard_IB.Size = new System.Drawing.Size(30, 33);
+            this.dashboard_IB.TabIndex = 2;
+            this.dashboard_IB.Text = "0";
             // 
             // label4
             // 
@@ -131,7 +133,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.SeaGreen;
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.dashboard_AB);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(28, 18);
@@ -139,16 +141,16 @@
             this.panel2.Size = new System.Drawing.Size(233, 163);
             this.panel2.TabIndex = 0;
             // 
-            // label2
+            // dashboard_AB
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(189, 117);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 33);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "0";
+            this.dashboard_AB.AutoSize = true;
+            this.dashboard_AB.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dashboard_AB.ForeColor = System.Drawing.Color.White;
+            this.dashboard_AB.Location = new System.Drawing.Point(189, 117);
+            this.dashboard_AB.Name = "dashboard_AB";
+            this.dashboard_AB.Size = new System.Drawing.Size(30, 33);
+            this.dashboard_AB.TabIndex = 2;
+            this.dashboard_AB.Text = "0";
             // 
             // label1
             // 
@@ -160,6 +162,16 @@
             this.label1.Size = new System.Drawing.Size(120, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Available Books";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::LibraryManagementSystem.Properties.Resources.pexels_polina_zimmerman_3747468;
+            this.pictureBox4.Location = new System.Drawing.Point(12, 228);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(854, 324);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -192,6 +204,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.panel1);
             this.Name = "Dashboard";
             this.Size = new System.Drawing.Size(880, 565);
@@ -202,6 +215,7 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -216,13 +230,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label dashboard_RB;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label dashboard_IB;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label dashboard_AB;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

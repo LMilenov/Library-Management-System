@@ -113,6 +113,16 @@ namespace LibraryManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_dashboard_32px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_dashboard_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_library_100px {
             get {
                 object obj = ResourceManager.GetObject("icons8_library_100px", resourceCulture);
@@ -136,6 +146,16 @@ namespace LibraryManagementSystem.Properties {
         internal static System.Drawing.Bitmap icons8_return_32px_3 {
             get {
                 object obj = ResourceManager.GetObject("icons8_return_32px_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_polina_zimmerman_3747468 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-polina-zimmerman-3747468", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

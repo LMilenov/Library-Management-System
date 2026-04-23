@@ -27,6 +27,16 @@ namespace LibraryManagementSystem
 
         }
 
+        public void refreshData()
+        {
+            if (InvokeRequired)
+            {
+                Invoke((MethodInvoker)refreshData);
+                return;
+            }
+            displayIssuedBooksData();
+        }
+
         private void returnBooks_returnBtn_Click(object sender, EventArgs e)
         {
             if (returnBooks_issueID.Text == ""
@@ -47,6 +57,7 @@ namespace LibraryManagementSystem
                         + returnBooks_issueID.Text.Trim()
                         + "is return already?", "Confirmation Message", MessageBoxButtons.YesNo
                         , MessageBoxIcon.Question);
+
                     if(check == DialogResult.Yes)
                     {
                         try
@@ -61,7 +72,15 @@ namespace LibraryManagementSystem
                             {
                                 cmd.Parameters.AddWithValue("@status", "Return");
                                 cmd.Parameters.AddWithValue("@dateUpdate", today);
-                                cmd.Parameters.AddWithValue("@issueID", returnBooks_issueID.Text.Trim());
+                                cmd.Parameters.AddWithValue("@issueID", returnBooks_issueID.Text);
+
+                                cmd.ExecuteNonQuery();
+
+                                displayIssuedBooksData();
+
+                                MessageBox.Show("Returned successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                clearFields();
                             }
                         }
                         catch (Exception ex)
@@ -101,7 +120,7 @@ namespace LibraryManagementSystem
             }
         }
 
-        private void returnBooks_clearBtn_Click(object sender, EventArgs e)
+        public void clearFields()
         {
             returnBooks_issueID.Text = "";
             returnBooks_name.Text = "";
@@ -109,6 +128,11 @@ namespace LibraryManagementSystem
             returnBooks_email.Text = "";
             returnBooks_bookTitle.Text = "";
             returnBooks_author.Text = "";
+        }
+
+        private void returnBooks_clearBtn_Click(object sender, EventArgs e)
+        {
+            clearFields();
         }
     }
 }
